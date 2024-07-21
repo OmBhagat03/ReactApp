@@ -1,0 +1,35 @@
+.footer {
+  align-items: center;
+  background-color: #f8f8f8;
+  border-top: 1px solid #d3d3d3;
+  color: #333;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 15px 10px;
+}
+
+.footer__link {
+  color: #007bff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 799px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__link {
+    margin-top: 5px;
+  }
+}

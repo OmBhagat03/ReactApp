@@ -1,0 +1,133 @@
+.addToCart_button {
+  background-color: #ff9f00;
+}
+
+.addToCart_button:hover {
+  background-color: #e68a00;
+}
+
+.buyNow_button {
+  background-color: #fb641b;
+}
+
+.buyNow_button:hover {
+  background-color: #e55300;
+}
+
+.card__button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card__button button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.description h4 {
+  margin-bottom: 10px;
+}
+
+.left_product_details {
+  margin-bottom: 20px;
+  max-width: 400px;
+  text-align: center;
+  width: 100%;
+}
+
+.left_product_details img {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  width: 100%;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.product__description {
+  color: #555;
+  font-size: 14px;
+}
+
+.product_details {
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.rating {
+  background: #26a541;
+  border-radius: 99px;
+  color: white;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 5px 15px;
+}
+
+.right_product_details {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  padding: 20px;
+  width: 100%;
+}
+
+.right_product_details div {
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .left_product_details,
+  .right_product_details {
+    max-width: none;
+    width: 100%;
+  }
+  .product_details {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .product__description {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 339px) {
+  .product__description {
+    font-size: 12px;
+  }
+}
