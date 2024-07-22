@@ -12,7 +12,6 @@ function getProductDetail(arr, id) {
 }
 
 function updateProduct(requiredProduct, payload) {
-  // const {INCREMENT} = ActionType;
   if (payload.updateType === "INCREMENT") {
     requiredProduct.count += 1;
     return requiredProduct;
@@ -24,7 +23,6 @@ function updateProduct(requiredProduct, payload) {
   }
 }
 function addProductInCart(payload) {
-  // console.log("This  function is called", payload);
 
   if (payload.updateType === "INCREMENT") {
     return {

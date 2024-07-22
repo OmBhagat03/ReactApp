@@ -12,7 +12,6 @@ export function increment(id) {
     id: id,
     updateType: INCREMENT,
   };
-  // console.log("THis is payload ", payload);
   return { type: UPDATE_PRODUCT_COUNTER, payload };
 }
 export function decrement(id) {
@@ -20,12 +19,8 @@ export function decrement(id) {
     id: id,
     updateType: DECREMENT,
   };
-  // console.log("THis is payload ", payload);
   return { type: UPDATE_PRODUCT_COUNTER, payload };
 }
-// export function updateProduct(payload = {}) {
-//   return { type: UPDATE_PRODUCT_COUNTER, payload };
-// }
 export function setProducts(products) {
   return { type: SET_PRODUCTS, payload: products };
 }
