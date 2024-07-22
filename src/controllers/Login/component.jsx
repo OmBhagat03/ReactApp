@@ -8,9 +8,11 @@ function Login() {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    if (username && password) {
+    if (username === "ombhagat" && password === "ombhagat") {
       localStorage.setItem("user", JSON.stringify({ username }));
       navigate("/");
+    } else {
+      alert("Invalid credentials");
     }
   };
 
